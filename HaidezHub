@@ -1,0 +1,53 @@
+    -- Criando a aba Blox-Fruits
+local Blox-FruitsTab = Window:MakeTab({
+    Name = "Blox-Fruits",
+    Icon = "rbxassetid://126633428869869",  -- Ícone para a aba Fisch
+    PremiumOnly = false
+})
+
+-- Criando a seção dentro da aba Fisch
+local Blox-FruitsSection = Blox-FruitsTab:AddSection({
+    Name = "Seção Blox-Fruits"
+})
+
+-- Criando o botão para executar o script
+Blox-FruitsTab:AddButton({
+    Name = "Haidez Hub",
+    Callback = function()
+        -- O código do script que você quer que seja executado vai aqui
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/karlinhubs/Haidez-Hub/refs/heads/main/README.dm))()))()
+        OrionLib:MakeNotification({
+            Name = "Script Executado",
+            Content = "O script foi executado com sucesso.",
+            Image = "rbxassetid://4483345998",  -- Você pode mudar a imagem se quiser
+            Time = 5
+        })
+    end
+})
+
+-- Criando a aba Fisch
+local FischTab = Window:MakeTab({
+    Name = "Fisch",
+    Icon = "rbxassetid://126633428869869",  -- Ícone para a aba Fisch
+    PremiumOnly = false
+})
+
+-- Criando a seção dentro da aba Fisch
+local FischSection = FischTab:AddSection({
+    Name = "Seção Fisch"
+})
+
+-- Criando o botão para executar o script
+FischTab:AddButton({
+    Name = "Haidez Hub",
+    Callback = function()
+        -- O código do script que você quer que seja executado vai aqui
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/karlinhubs/Haidez-Hub/main/script.lua"))()  -- Corrigindo a URL
+        OrionLib:MakeNotification({
+            Name = "Script Executado",
+            Content = "O script foi executado com sucesso.",
+            Image = "rbxassetid://4483345998",  -- Você pode mudar a imagem se quiser
+            Time = 5
+        })
+    end
+})
